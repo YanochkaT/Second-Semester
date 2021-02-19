@@ -1,0 +1,14 @@
+numbers = []
+b = 0
+max = 0
+suma = 0
+while True:
+    b = int(input("Write you numbers then type 0: "))
+    if b == 0:
+        print("Your summary is", suma,".Your max number is", max)
+        break
+    numbers.append(b)
+    if max < b:
+        max = b
+    suma += b
+    print(numbers)
